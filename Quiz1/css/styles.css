@@ -1,0 +1,121 @@
+.main-cont {
+	background-color: #79addc;
+	padding: 20px;
+}
+
+.head-cont {
+	background-color: #fcf5c7;
+	display: flex;
+	text-align: center;
+    padding: 10px 0;
+	justify-content: flex-start;
+	text-align: center;
+	border-radius: 25px;
+	border: 3px;
+	border-style: solid;
+	border-color: #000000;
+	position: relative;
+	margin: 20px;
+}
+
+
+.head-cont img {
+	border-radius: 25px;
+	border: 3px;
+	border-style: dotted;
+	border-color: #000000;
+	margin: 20px;
+}
+
+.social-cont {
+	background-color: #ffee93;
+	width: 300px;
+	height: 75px;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 25px;
+	
+}
+
+.social-cont button {
+	width: 40px;
+	height: 40px;
+}
+
+.button-cont {
+	background-color: #fcf5c7;
+	display: flex;
+	padding: 10px;
+	margin: 15px;
+	position: relative;
+	border-radius: 25px;
+	border: 3px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	
+}
+
+.button-cont button {
+	margin-left: 15px;
+	margin-right: 15px;
+	width: 100px;
+	height: 50px;
+}
+
+.nav-cont {
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	position: relative;
+	margin: 20px;
+	align-content: center;
+	border-radius: 25px;
+	border: 3px;
+	border-style: solid;
+	border-color: #FFFFFF;
+}
+
+.slider-cont {
+	border-radius: 25px;
+	border: 3px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: #000000;
+	color: #FFFFFF;
+	margin: 15px;
+	padding: 15px;
+	
+}
+
+
+.feature-cont {
+	display: flex;
+	margin: 25px;
+	background-color: #ffc09f;
+	justify-content: center;
+	border-radius: 25px;
+	border-color: #000000;
+	border: 3px;
+	border-style: solid;
+	position: relative;
+	margin: 20px;
+}
+
+.feature-cont div {
+	border-color: #FFFFFF;
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 100px;
+	height: 100px;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 15px;
+	border-radius: 25px;
+	text-align: center;
+	border-style: solid;
+}
+
+/* #79addc
+#ffc09f
+#ffee93
+#fcf5c7
+#adf7b6 */
