@@ -1,0 +1,126 @@
+:root {
+    --color_negro:#000000;
+    --color_blanco:#FFFFFF;
+    --color1:#ff4900;
+    --color2:#0093FF;
+    --color3:#c500ff;
+    --color4: #001bff;
+    --color5: #4CAF50;
+    --color6: #ff6600;
+    --color7: #bec1c3;
+    --color8: #045795;
+    --fuente1: 1.5rem;
+    --fuente2: 2rem;
+    --fuente3: 1rem;
+    --fuente4: 12px;
+    --ffuente1: Arial;
+    --ffuente2: Nerko One;
+    --sfuente1: bold;
+    --txdeco1: none;
+    --txdeco2: underline;
+
+}
+
+
+h2 {
+    color: var(--color1);
+    font-size: var(--fuente2);
+}
+
+.prim_p {
+    font-size: var(--fuente3);
+    color: var(--color2);
+    font-family: var(--ffuente1);
+}
+
+.seg_p {
+    font-size: var(--fuente4);
+    color: var(--color3);
+    font-family: var(--ffuente2);
+}
+
+a {
+    color: var(--color4);
+    font-style: var(--sfuente1);
+    text-decoration: var(--txdeco1);
+}
+
+a:visited {
+    color: var(--color5);
+}
+
+a:hover {
+color: var(--color6);
+text-decoration: var(--txdeco2);
+}
+
+th {
+    background-color: var(--color_negro);
+    color: var(--color_blanco);
+    font-size: var(--fuente1);
+}
+
+tr {
+    background-color: var(--color7);
+    color: var(--color_negro);
+    font-size: var(--fuente1);
+}
+
+.fila_media {
+    background-color: var(--color8);
+    color: var(--color_blanco);
+    font-size: var(--fuente1);
+}
+
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+.header .box {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+.header .box.left {
+    left: 10px;
+}
+.header .box.right {
+    right: 10px;
+}
+.container {
+    display: flex;
+    margin: 20px;
+}
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+.main-content {
+    width: 80%;
+    padding: 10px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .box {
+    width: 100px;
+    height: 50px;
+    background-color: #555;
+    color: white;
+    line-height: 50px;
+}
