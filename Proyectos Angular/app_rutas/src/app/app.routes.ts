@@ -8,13 +8,13 @@ export const routes: Routes = [
     {
         path:'',
         component:HomepageComponent
-    },
-    {
-        path:'auth',
-        component:AuthPageComponent
-    },
-    {
-        path:'sidebar',
-        component:SidebarPageComponent
     }
+    // {
+    //     path:'auth',
+    //     component:AuthPageComponent
+    // },
+    // {
+    //     path:'sidebar',
+    //     component:SidebarPageComponent
+    // }
 ];
