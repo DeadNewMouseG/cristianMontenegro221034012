@@ -1,0 +1,15 @@
+<form>
+    <p-card [style]=" {width: '360px'} ">
+        <h2>Register</h2><br>
+        <p>FullName</p>
+        <input type="text" pInputText [(ngModel)]="fullname" placeholder="Type your name" /><br>
+        <p>Email</p>
+        <input type="text" pInputText [(ngModel)]="email" placeholder="Type your email" /><br>
+        <p>Password</p>
+        <input type="password" pInputText [(ngModel)]="password" placeholder="Type your password" /><br>
+        <p>Confirm Password</p>
+        <input type="password" pInputText [(ngModel)]="password" placeholder="Confirm password" /><br><br>
+        <p-button label="Register"></p-button>
+        <p>Already a member? <a href="login">Login</a></p>
+    </p-card>
+</form>
