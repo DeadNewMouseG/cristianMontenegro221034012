@@ -1,15 +1,26 @@
 <form>
-    <p-card [style]=" {width: '360px'} ">
-        <h2>Register</h2><br>
-        <p>FullName</p>
-        <input type="text" pInputText [(ngModel)]="fullname" placeholder="Type your name" /><br>
-        <p>Email</p>
-        <input type="text" pInputText [(ngModel)]="email" placeholder="Type your email" /><br>
-        <p>Password</p>
-        <input type="password" pInputText [(ngModel)]="password" placeholder="Type your password" /><br>
-        <p>Confirm Password</p>
-        <input type="password" pInputText [(ngModel)]="password" placeholder="Confirm password" /><br><br>
-        <p-button label="Register"></p-button>
-        <p>Already a member? <a href="login">Login</a></p>
+    <p-card header="Register" [style]=" {width: '360px'} ">
+        <div class="card flex justify-content-center">
+            <p>FullName</p>
+            <input type="text" pInputText [(ngModel)]="fullname" placeholder="Type your name" /><br>
+        </div>
+        <div class="card flex justify-content-center">
+            <p>Email</p>
+            <input type="text" pInputText [(ngModel)]="email" placeholder="Type your email" /><br>
+        </div>
+        <div class="card flex justify-content-center">
+            <p>Password</p>
+            <input type="password" pInputText [(ngModel)]="password" placeholder="Type your password" /><br>
+        </div>
+        <div class="card flex justify-content-center">
+            <p>Confirm Password</p>
+            <input type="password" pInputText [(ngModel)]="password" placeholder="Confirm password" /><br><br>
+        </div>
+        <div class="card flex justify-content-center">
+            <p-button label="Register"></p-button>
+        </div>
+        <div class="card flex justify-content-center">
+            <p>Already a member? <a href="login">Login</a></p>
+        </div>
     </p-card>
 </form>

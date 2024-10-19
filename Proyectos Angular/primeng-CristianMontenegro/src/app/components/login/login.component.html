@@ -1,11 +1,16 @@
-<form>
-    <p-card [style]=" {width: '360px'} ">
-        <h2>Login</h2><br>
-        <p>Email</p>
-        <input type="text" pInputText [(ngModel)]="email" placeholder="Type your email" /><br>
-        <p>Password</p>
-        <input type="password" pInputText [(ngModel)]="password" placeholder="Type your password" /><br><br>
-        <p-button label="Sign In"></p-button>
-        <p>Not a member? <a href="register">Register</a></p>
-    </p-card>
+<form [FormGorup] = "loginForm">
+    <div class="card flex justify-content-center">
+        <p-card header="Login" [style]=" {width: '360px'} ">
+            <div class="field">
+                <input
+                type="text"
+                pInputText
+                formControlName="user"
+                class="w-full"
+                name="Usuario"
+                placeholder="Nombre de usuario"
+                />
+            </div>
+        </p-card>
+    </div>
 </form>
