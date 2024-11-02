@@ -1,1 +1,51 @@
-<p>title works!</p>
+<div class="p-fluid">
+    <form [formGroup]="userTitle">
+        <h3>Formulario de Solicitud de Vacaciones</h3>
+        <div class="flex display:inline;">
+            <div class="p-field">
+                <label for="name">Nombre</label>
+                <div class="p-field">
+                    <input id="name" type="text" pInputText formControlName="name" placeholder="Nombre(s)">
+                    <div *ngIf="userTitle.controls['name'].invalid && userTitle.controls['name'].touched" class="error">
+                        El nombre es invalido
+                    </div>
+                </div>
+            </div>
+            <div class="p-field">
+                <label for="lastName">Apellido</label>
+                <div class="p-field">
+                    <input id="lastName" type="text" pInputText formControlName="lastName" placeholder="Apellido(s)">
+                    <div *ngIf="userTitle.controls['lastName'].invalid && userTitle.controls['lastName'].touched" class="error">
+                        El apellido es invalido
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="p-fluid">
+            <label for="email">Correo Electronico</label>
+            <div class="p-fluid">
+                <p-iconField iconPosition="left">
+                    <p-inputIcon styleClass="pi pi-envelope" />
+                    <input id="email" type="email" pInputText formControlName="email">
+                </p-iconField>
+                <div *ngIf="userTitle.controls['email'].invalid && userTitle.controls['email'].touched" class="error">
+                    el correo no es valido
+                </div>
+            </div>
+        </div>
+    
+        <div class="p-fluid">
+            <label for="phone">Telefono</label>
+            <div class="p-fluid">
+                <p-iconField iconPosition="left">
+                    <p-inputIcon styleClass="pi pi-phone" />
+                    <input id="phone" type="text" pInputText formControlName="phone">
+                </p-iconField>
+                <div *ngIf="userTitle.controls['phone'].invalid && userTitle.controls['phone'].touched" class="error">
+                    el telefono no es valido
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

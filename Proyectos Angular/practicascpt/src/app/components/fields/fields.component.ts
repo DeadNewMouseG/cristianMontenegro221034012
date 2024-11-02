@@ -18,10 +18,6 @@ export class FieldsComponent {
 
   constructor(private fb: FormBuilder) {
     this.userFields = this.fb.group({
-      name: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
-      phone: ['', Validators.required,],
       nameManager: ['', Validators.required],
       emailManager: ['', Validators.required, Validators.email]
     });

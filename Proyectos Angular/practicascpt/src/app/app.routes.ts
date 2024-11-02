@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { FieldsComponent } from './components/fields/fields.component';
 import { TitleComponent } from './components/title/title.component';
 import { LicenceComponent } from './components/licence/licence.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
     {
@@ -15,5 +16,9 @@ export const routes: Routes = [
     {
         path: 'licence',
         component: LicenceComponent
-    }
+    },
+    // {
+    //     path: '',
+    //     component: AppComponent
+    // }
 ];

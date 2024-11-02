@@ -1,1 +1,30 @@
-<p>licence works!</p>
+<div class="p-fluid">
+    <form [formGroup]="licenceForm">
+        <div class="p-field">
+            <label for="startdate">Fecha de Inicio</label>
+            <p-calendar
+                id="startdate"
+                formControlName="startdate"
+                [(ngModel)]="date"
+                [iconDisplay]="'input'"
+                [showIcon]="true"
+                inputId="icondisplay"/>
+        </div>
+        <div class="p-field">
+            <label for="enddate">Fecha de finalización</label>
+            <p-calendar
+                id="enddate"
+                formControlName="enddate"
+                [(ngModel)]="date2"
+                [iconDisplay]="'input'"
+                [showIcon]="true"
+                inputId="icondisplay"/>
+        </div>
+        <div class="p-field">
+            <label for="note">Notas</label>
+            <textarea pInputTextarea formControlName="note"></textarea>
+        </div>
+
+        <p-button label="Enviar" />
+    </form>
+</div>
