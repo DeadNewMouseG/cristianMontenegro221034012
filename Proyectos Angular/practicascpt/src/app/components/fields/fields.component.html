@@ -1,0 +1,57 @@
+<div class="p-fluid">
+    <form [formGroup]="userFields">
+
+        <div class="flex display:inline;">
+            <input id="name" type="text" pInputText formControlName="name">
+            <div *ngIf="userFields.controls['name'].invalid && userFields.controls['name'].touched" class="error">
+                El nombre es invalido
+            </div>
+            <input id="lastName" type="text" pInputText formControlName="lastName">
+            <div *ngIf="userFields.controls['lastName'].invalid && userFields.controls['lastName'].touched" class="error">
+                El apellido es invalido
+            </div>
+        </div>
+
+        <div class="p-fluid">
+            <p-iconField iconPosition="left">
+                <p-inputIcon styleClass="pi pi-envelope" />
+                <input id="email" type="email" pInputText formControlName="email">
+            </p-iconField>
+            <div *ngIf="userFields.controls['email'].invalid && userFields.controls['email'].touched" class="error">
+                el correo no es valido
+            </div>
+        </div>
+
+        <div class="p-fluid">
+            <p-iconField iconPosition="left">
+                <p-inputIcon styleClass="pi pi-phone" />
+                <input id="phone" type="text" pInputText formControlName="phone">
+            </p-iconField>
+            <div *ngIf="userFields.controls['phone'].invalid && userFields.controls['phone'].touched" class="error">
+                el telefono no es valido
+            </div>
+        </div>
+        
+        <div class="p-fluid">
+            <p-iconField iconPosition="left">
+                <p-inputIcon styleClass="pi pi-user-plus" />
+                <input id="nameManager" type="text" pInputText formControlName="nameManager">
+            </p-iconField>
+            <div *ngIf="userFields.controls['nameManager'].invalid && userFields.controls['nameManager'].touched" class="error">
+                el nombre no es valido
+            </div>
+        </div>
+
+        <div class="p-fluid">
+            <p-iconField iconPosition="left">
+                <p-inputIcon styleClass="pi pi-envelope" />
+                <input id="emailManager" type="email" pInputText formControlName="emailManager">
+            </p-iconField>
+            <div *ngIf="userFields.controls['emailManager'].invalid && userFields.controls['emailManager'].touched" class="error">
+                el email no es valido
+            </div>
+        </div>
+
+
+    </form>
+</div>
