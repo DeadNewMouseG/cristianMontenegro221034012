@@ -40,4 +40,12 @@ export class LoginService {
     return this.http.post(`${this.apiUrl}/delete/${id}`, body)
   }
 
+  getUsers(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/getusers`);
+  }
+
+  getUserById(userId: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/getUserById/${userId}`);
+  }
+
 }

@@ -7,6 +7,8 @@ import { LoginTestComponent } from './components/login-test/login-test.component
 import { OtherFormComponent } from './components/other-form/other-form.component';
 import { OtherFormCbComponent } from './components/other-form-cb/other-form-cb.component';
 import { UserManagementComponent } from './components/user-management/user-management.component';
+import { ListUsersComponent } from './components/list-users/list-users.component';
+import { FilteruserComponent } from './components/filter-user/filter-user.component';
 
 export const routes: Routes = [
   {
@@ -36,6 +38,14 @@ export const routes: Routes = [
   {
     path: 'myupdate',
     component:UserManagementComponent
+  },
+  {
+    path: 'list',
+    component:ListUsersComponent
+  },
+  {
+    path: 'filter',
+    component:FilteruserComponent
   },
   {
     path: '',
